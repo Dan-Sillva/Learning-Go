@@ -1,27 +1,28 @@
 package main
 import "fmt"
 
-// exercicio 2:
+// exercicio 3:
 
 /*
-Use var para declarar três variáveis. Elas devem ter package-level scope. Não atribua valores a estas variáveis. Utilize os seguintes identificadores e tipos para estas variáveis:
+Utilizando a solução do exercício anterior:
 
-    Identificador "x" deverá ter tipo int
-    Identificador "y" deverá ter tipo string
-    Identificador "z" deverá ter tipo bool
-
-Na função main:
-
-    Demonstre os valores de cada identificador
-    O compilador atribuiu valores para essas variáveis. Como esses valores se chamam?
+    Em package-level scope, atribua os seguintes valores às variáveis:
+        para "x" atribua 42
+        para "y" atribua "James Bond"
+        para "z" atribua true
+    Na função main:
+        Use fmt.Sprintf para atribuir todos esses valores a uma única variável. Faça essa atribuição de tipo string a uma variável de nome "s" utilizando o operador curto de declaração.
+        Demonstre a variável "s".
 */
 
-var x int
-var y string
-var z bool
+var x = 42
+var y = "James Bond"
+var z = true
 
 func main(){
-	fmt.Printf("Value: \n  x=%v \n  y=%v \n  z=%v\n\n", x, y, z)
-	fmt.Printf("Type: \n  x=%T \n  y=%T \n  z=%T\n\n", x, y, z)
+	s := fmt.Sprintf("Value of 's': \n  x=%v \n  y=%v \n  z=%v\n\n", x, y, z)
+
+	fmt.Printf(s)
+	fmt.Printf("Type of 's' >> %T\n\n", s)
 
 }
