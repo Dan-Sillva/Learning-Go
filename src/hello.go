@@ -1,31 +1,27 @@
 package main
 import "fmt"
 
-// exercicio 1:
+// exercicio 2:
 
 /*
-Utilizando o operador curto de declaração, atribua estes valores às variáveis com os identificadores "x", "y", e "z".
+Use var para declarar três variáveis. Elas devem ter package-level scope. Não atribua valores a estas variáveis. Utilize os seguintes identificadores e tipos para estas variáveis:
 
-    42
-    "James Bond"
-    true
+    Identificador "x" deverá ter tipo int
+    Identificador "y" deverá ter tipo string
+    Identificador "z" deverá ter tipo bool
 
-Agora demonstre os valores nestas variáveis, com:
+Na função main:
 
-    Uma única declaração print
-    Múltiplas declarações print
+    Demonstre os valores de cada identificador
+    O compilador atribuiu valores para essas variáveis. Como esses valores se chamam?
 */
 
+var x int
+var y string
+var z bool
+
 func main(){
-	x := 46
-	y := "James Bond"
-	z := true
-
-	fmt.Println("One Print: ", x, " ",  y, " ", z)
-
-	fmt.Printf("\n\nMany Prints: %v \n",x)
-	fmt.Println(y)
-	fmt.Println(z)
-
+	fmt.Printf("Value: \n  x=%v \n  y=%v \n  z=%v\n\n", x, y, z)
+	fmt.Printf("Type: \n  x=%T \n  y=%T \n  z=%T\n\n", x, y, z)
 
 }
