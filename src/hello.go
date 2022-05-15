@@ -1,28 +1,29 @@
 package main
 import "fmt"
 
-// exercicio 3:
+// exercicio 4:
 
 /*
-Utilizando a solução do exercício anterior:
+Crie um tipo. O tipo subjacente deve ser int.
+Crie uma variável para este tipo, com o identificador "x", utilizando a palavra-chave var.
+Na função main:
 
-    Em package-level scope, atribua os seguintes valores às variáveis:
-        para "x" atribua 42
-        para "y" atribua "James Bond"
-        para "z" atribua true
-    Na função main:
-        Use fmt.Sprintf para atribuir todos esses valores a uma única variável. Faça essa atribuição de tipo string a uma variável de nome "s" utilizando o operador curto de declaração.
-        Demonstre a variável "s".
+    Demonstre o valor da variável "x"
+    Demonstre o tipo da variável "x"
+    Atribua 42 à variável "x" utilizando o operador "="
+    Demonstre o valor da variável "x"
+
+Para os aventureiros: https://golang.org/ref/spec#Types
+Agora já somos quase ninjas nível 1!
 */
 
-var x = 42
-var y = "James Bond"
-var z = true
+type best int   
 
 func main(){
-	s := fmt.Sprintf("Value of 's': \n  x=%v \n  y=%v \n  z=%v\n\n", x, y, z)
+	var x best
 
-	fmt.Printf(s)
-	fmt.Printf("Type of 's' >> %T\n\n", s)
+    fmt.Printf("value: %v \t type: %T\n", x, x)
+    x = 42
+    fmt.Println("value: ", x)
 
 }
