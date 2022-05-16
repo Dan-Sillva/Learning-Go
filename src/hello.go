@@ -1,28 +1,14 @@
 package main
 import "fmt"
 
-/*
-Working with iota displaying: 
-    KB: Kilobyte 
-    MB: Megabyte  
-    GB: Gigabyte
-    TB: Terabyte
+// exercicio 1
 
-    => in binary and decimal form 
+/*
+Escreva um programa que mostre um número em decimal, binário, e hexadecimal.
 */
 
-const (
-    _ = 1 << ( iota * 10 )
-    KB
-    MB
-    GB
-    TB
-)
 
 func main(){
-    fmt.Printf("binary\t\t\t\t\t |decimal\n")
-	fmt.Printf("%b\t\t\t\t |%v\n",KB, KB)
-    fmt.Printf("%b\t\t\t |%v\n",MB, MB)
-    fmt.Printf("%b\t\t |%v\n",GB, GB)
-    fmt.Printf("%b|%v\n",TB, TB)
+    x := 109
+    fmt.Printf("decimal: %v\tbinary: %b\thexadecimal: %x\n",x,x,x)
 }
