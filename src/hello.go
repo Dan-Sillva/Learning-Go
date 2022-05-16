@@ -1,14 +1,29 @@
 package main
 import "fmt"
 
-// exercicio 1
+// exercicio 2
 
 /*
-Escreva um programa que mostre um número em decimal, binário, e hexadecimal.
+Escreva expressões utilizando os seguintes operadores, e atribua seus valores a variáveis.
+
+    ==
+    !=
+    <=
+    <
+
+Demonstre estes valores.
 */
 
 
 func main(){
-    x := 109
-    fmt.Printf("decimal: %v\tbinary: %b\thexadecimal: %x\n",x,x,x)
+    z := 10 == 10
+    x := 10 != 10
+    c := 12 <= 10
+    v := 10 < 10
+
+    fmt.Println("z: ", z)
+    fmt.Println("x: ", x)
+    fmt.Println("c: ", c)
+    fmt.Println("v: ", v)
+
 }
