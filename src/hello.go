@@ -1,23 +1,25 @@
-package main
-import "fmt"
+package main;
+import "fmt";
 
-// exercicio 6
+// exercicio surpresa
 
 /*
-Utilizando iota, crie 4 constantes cujos valores sejam os próximos 4 anos.
-Demonstre estes valores.
+Desafio surpresa!
+Format printing:
+
+    Decimal %d
+    Hexadecimal %#x
+    Unicode %#U
+    Tab \t
+    Linha nova \n
+
+Faça um loop dos números 33 a 122, e utilize format printing para demonstrá-los como texto/string.
 */
 
-const (
-    _ = 2022 + iota
-    a
-    b
-    c
-    d
-
-)
-
 func main(){
-    fmt.Println("Next Years:")
-    fmt.Printf("%v\t%v\t%v\t%v\n", a, b, c, d)
+    x := 33;
+	for x <= 122 {
+		fmt.Printf("decimal:%d\t\thexadecimal:%#x\t\tunicode:%#U\n", x, x, x);
+		x++;
+	};
 }
