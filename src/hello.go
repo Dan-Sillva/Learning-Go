@@ -1,23 +1,23 @@
 package main
 import "fmt"
 
-// exercicio 5
+// exercicio 6
 
 /*
-Crie uma variável de tipo string utilizando uma raw string literal.
-Demonstre-a.
+Utilizando iota, crie 4 constantes cujos valores sejam os próximos 4 anos.
+Demonstre estes valores.
 */
 
+const (
+    _ = 2022 + iota
+    a
+    b
+    c
+    d
+
+)
+
 func main(){
-    x := `R
-    A
-        W
-              S
-        tri
-ng
-
-        literal ...`
-
-    fmt.Println(x)
-
+    fmt.Println("Next Years:")
+    fmt.Printf("%v\t%v\t%v\t%v\n", a, b, c, d)
 }
