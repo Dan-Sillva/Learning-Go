@@ -1,25 +1,23 @@
 package main
 import "fmt"
 
-// exercicio 4
+// exercicio 5
 
 /*
-Crie um programa que:
-
-    Atribua um valor int a uma variável
-    Demonstre este valor em decimal, binário e hexadecimal
-    Desloque os bits dessa variável 1 para a esquerda, e atribua o resultado a outra variável
-    Demonstre esta outra variável em decimal, binário e hexadecimal
-
+Crie uma variável de tipo string utilizando uma raw string literal.
+Demonstre-a.
 */
 
 func main(){
-    x := 64
+    x := `R
+    A
+        W
+              S
+        tri
+ng
 
-    fmt.Printf("\tdecimal\t\tbinary\t\thexadecimal\n")
-    fmt.Printf("x:\t%v \t\t%b \t%#x\n", x, x, x)
+        literal ...`
 
-    y := x << 1
-    fmt.Printf("y:\t%v \t\t%b \t%#x\n", y, y, y)
+    fmt.Println(x)
 
 }
