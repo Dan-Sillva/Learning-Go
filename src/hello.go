@@ -1,21 +1,18 @@
 package main;
 import "fmt";
 
-// exercicio 4
+// exercicio 5
 
 /*
-Crie um loop utilizando a sintaxe: for {}
-Utilize-o para demonstrar os anos desde que você nasceu.
+Demonstre o resto da divisão por 4 de todos os números entre 10 e 100
 */
 
 func main(){
-    x := 2002;
+	fmt.Printf("resto     \t| resultado |\n")
+	fmt.Printf("-=--=--=--=--=--|--=--=--=--|\n")
 
-    for {
-        fmt.Println(x);
-        x++;
-		if x > 2022 {
-			break
-		}
+    for x := 10; x <= 20; x++ {
+        y := (x % 4)
+		fmt.Printf("%v / 4:   \t| %v\t    |\n", x, y)
     };
 }
