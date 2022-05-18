@@ -1,25 +1,18 @@
 package main;
 import "fmt";
 
-// exercicio surpresa
+// exercicio 1
 
 /*
-Desafio surpresa!
-Format printing:
-
-    Decimal %d
-    Hexadecimal %#x
-    Unicode %#U
-    Tab \t
-    Linha nova \n
-
-Faça um loop dos números 33 a 122, e utilize format printing para demonstrá-los como texto/string.
+Põe na tela: todos os números de 1 a 10000.
 */
 
 func main(){
-    x := 33;
-	for x <= 122 {
-		fmt.Printf("decimal:%d\t\thexadecimal:%#x\t\tunicode:%#U\n", x, x, x);
-		x++;
+    x := 1;
+    fmt.Printf("--:\timpar\tpar\n")
+
+	for x <= 10000 {
+		fmt.Printf("--:\t%v\t%v\n", x, (x + 1));
+		x = x + 2;
 	};
 }
